@@ -1,0 +1,160 @@
+html{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	/** Google Fonts and/or Letter Spacing **/
+	/**
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 0.03rem; 
+	**/
+	/** background-color: lightgray; **/
+	-webkit-font-smoothing: antialiased;
+	
+}
+
+div {
+	border: 1px solid chocolate;
+}
+
+::selection {
+  background: #d1e0e0;
+}
+
+
+/* HEADER CSS */
+
+header {
+  padding: 7em 0em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('https://images.unsplash.com/photo-1449168013943-3a15804bb41c?crop=entropy&dpr=2&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450');
+  border-top: solid 1em #75a3a3;
+}
+
+header p {
+  font-weight: bold;
+  font-size: 2em;
+  color: #293d3d;
+  margin-bottom: 0.1em;
+}
+
+header h1 {
+  font-weight: bold;
+  color: #293d3d;
+  text-shadow: 0em 0.03em 0em #476b6b;
+  text-transform: uppercase;
+  font-size: 6em;
+  letter-spacing: -0.02em;
+  margin-top: -0.2em;
+}
+
+
+
+
+/* Typography Declarations */
+
+header p {
+  font-family: "Gentium Book Basic", "Georgia", serif;
+}
+
+header h1,
+section,
+footer {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+section > p, section > ul,
+footer > p {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+header p,
+header h1,
+footer {
+  text-align: center;
+}
+
+/* SECTION CSS */
+
+section {
+  max-width: 40%;
+  margin: auto;
+}
+
+a {
+  color: #75a3a3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #a3c2c2;
+}
+
+a:visited {
+  color: #00a3cc;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.2em;
+  color: #334d4d;
+  margin-top: 1.5em;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #75a3a3;
+  margin: 2em 0 1em 0;
+}
+
+
+/* FOOTER CSS */
+
+footer {
+  background-color: #476b6b;
+  margin-top: 5em;
+  padding: 4em 0;
+}
+
+footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+footer > p {
+  color: white;
+}
+
+/** RESPONSIVE DESIGN **/
+
+@media screen and (max-width: 980px) {
+	header {
+		border-top: none;
+	}
+	section {
+  		max-width: 90%;
+  		margin: auto;
+}
+	footer ul li {
+		font-size: 2rem;
+	}
+	}
+
+
+}
