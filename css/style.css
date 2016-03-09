@@ -146,15 +146,45 @@ footer > p {
 @media screen and (max-width: 980px) {
 	header {
 		border-top: none;
+    padding: 3em;
 	}
-	section {
-  		max-width: 90%;
-  		margin: auto;
-}
-	footer ul li {
-		font-size: 2rem;
-	}
-	}
-
+  header p {
+    font-size: 1.5em;
+  }
+  header h1 {
+    font-size: 5em;
+  }
 
 }
+
+@media screen and (max-width: 675px) {
+  header {
+    border-top: none;
+    padding: 3em;
+  }
+  header p {
+    font-size: 1.25em;
+  }
+  header h1 {
+    font-size: 4em;
+  }
+
+  section {
+    max-width: 50%;
+  }
+  section > p, section > ul,
+  footer > p {
+    font-size: 0.9em;
+    letter-spacing: 0.04em;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    max-width: 70%;
+    
+  }
+
+}
+  
